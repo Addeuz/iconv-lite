@@ -1,6 +1,6 @@
-import assert from 'assert'
-import pkg from 'safer-buffer'
-const { iconv } = await import('../lib/index.js')
+import assert from "assert"
+import pkg from "safer-buffer"
+const { iconv } = await import("../lib/index.js")
 const { Buffer } = pkg
 
 // These tests are mostly from https://github.com/kkaefer/utf7

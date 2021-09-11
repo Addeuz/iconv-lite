@@ -1,8 +1,8 @@
-import assert from 'assert'
-import unorm from 'unorm'
-import pkg from 'safer-buffer'
-import {Iconv} from 'iconv'
-const { iconv } = await import('../lib/index.js')
+import assert from "assert"
+import unorm from "unorm"
+import pkg from "safer-buffer"
+import {Iconv} from "iconv"
+const { iconv } = await import("../lib/index.js")
 const { Buffer } = pkg
 
 function convertWithDefault(converter, buf, def) {

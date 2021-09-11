@@ -1,7 +1,7 @@
-import assert from 'assert'
-import pkg from 'safer-buffer'
-import { Iconv } from 'iconv'
-const { iconv } = await import('../lib/index.js')
+import assert from "assert"
+import pkg from "safer-buffer"
+import { Iconv } from "iconv"
+const { iconv } = await import("../lib/index.js")
 const { Buffer } = pkg
 
 

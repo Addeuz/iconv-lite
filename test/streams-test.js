@@ -1,8 +1,8 @@
-import assert from 'assert'
-import semver from 'semver'
-import pkg from 'safer-buffer'
-import { Readable } from 'stream'
-const { iconv } = await import('../lib/index.js')
+import assert from "assert"
+import semver from "semver"
+import pkg from "safer-buffer"
+import { Readable } from "stream"
+const { iconv } = await import("../lib/index.js")
 const { Buffer } = pkg
 
 if (!iconv.supportsStreams)    throw new Error('iconv.supportsStreams is null.')

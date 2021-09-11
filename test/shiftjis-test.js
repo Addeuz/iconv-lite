@@ -1,6 +1,6 @@
-import assert from 'assert'
-import pkg from 'safer-buffer'
-const { iconv } = await import('../lib/index.js')
+import assert from "assert"
+import pkg from "safer-buffer"
+const { iconv } = await import("../lib/index.js")
 const { Buffer } = pkg
 
 describe("ShiftJIS tests", function() {

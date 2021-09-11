@@ -1,6 +1,6 @@
-import assert from 'assert'
-import pkg from 'safer-buffer'
-const { iconv } = await import('../lib/index.js')
+import assert from "assert"
+import pkg from "safer-buffer"
+const { iconv } = await import("../lib/index.js")
 const { Buffer } = pkg
     
 var sampleStr = '<?xml version="1.0" encoding="UTF-8"?>\n<俄语>данные</俄语>',
