@@ -1,12 +1,11 @@
-var assert = require('assert'),
-    Buffer = require('safer-buffer').Buffer,
-    semver = require('semver'),
-    iconv = require(__dirname+'/../');
+import assert from "assert"
+import semver from "semver"
+import pkg from "safer-buffer"
+import { Readable } from "stream"
+const { iconv } = await import("../lib/index.js")
+const { Buffer } = pkg
 
-if (!iconv.supportsStreams)
-    return;
-
-var Readable = require('stream').Readable;
+if (!iconv.supportsStreams)    throw new Error('iconv.supportsStreams is null.')
 
 // Create a source stream that feeds given array of chunks.
 function feeder(chunks) {
